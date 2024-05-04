@@ -26,3 +26,21 @@ console.log(challenge.match('a'))
 let word = '30 Days of'
 console.log(word.concat('JavaScript'))
 console.log(challenge.repeat(2))
+
+//LEVEL2: EXERCISE
+let quote = 'There is no exercise better for the heart than reaching down and lifting people up.'
+console.log(quote.concat('by John Holmes teaches us to help one another.'))
+let motherTeresa = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+console.log(motherTeresa)
+console.log(typeof'10')
+
+let pyth = 'python' 
+console.log(pyth.includes('on'))
+let jar = 'jargon'
+console.log(jar.includes('on'))
+let course = 'I hope this course is not full of jargon.'
+console.log(course.includes('jargon'))
+
+let number = Math.round(Math.random() * 101)
+console.log(number)
+let phrase = 'You cannot end a sentence with because because because is a conjunction'
