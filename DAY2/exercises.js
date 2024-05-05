@@ -1,8 +1,8 @@
 let challenge = '30 Days Of JavaScript'
 console.log(challenge)
 console.log(challenge.length)
-console.log(challenge.toUpperCase)
-console.log(challenge.toLowerCase)
+console.log(challenge.toUpperCase())
+console.log(challenge.toLowerCase())
 console.log(challenge.substring(0, 2))
 console.log(challenge.substring(0, 10))
 console.log(challenge.includes('Script'))
@@ -12,7 +12,7 @@ let string = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
 console.log(string.split(' ,'))
 console.log(challenge.replace('Javascript', 'Python' ))
 console.log(challenge.charAt(15))
-console.log(challenge.charCodeAt(J))
+console.log(challenge.charCodeAt('J'))
 console.log(challenge.indexOf('a'))
 console.log(challenge.lastIndexOf('a'))
 let reason = 'You cannot end a sentence with because because because is a conjunction'
@@ -41,6 +41,12 @@ console.log(jar.includes('on'))
 let course = 'I hope this course is not full of jargon.'
 console.log(course.includes('jargon'))
 
-let number = Math.round(Math.random() * 101)
+let number = Math.floor(Math.random() * 51 + 50)
 console.log(number)
+
+let z = challenge.length
+let random = Math.floor(Math.random() * z)
+console.log(challenge[random])
+
 let phrase = 'You cannot end a sentence with because because because is a conjunction'
+console.log(phrase.substr(31, 23))
