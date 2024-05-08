@@ -118,17 +118,57 @@ console.log(i)
 // }
 //10
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
-const num = []
+
 let add = 0
 for (let i = 0; i<= 100; i++){
-    add = add + num[[i]]
+    add = add + i
 }
-console.log(add)
-const numbers = [1, 2, 3, 4, 5]
-let sum = 0
-for(let i = 0; i < numbers.length; i++){
-  sum  = sum + numbers[i]  // can be shorten, sum += numbers[i]
-
+console.log(`The sum of all numbers from 0 to 100 is ${add}`)
+//11
+//Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+let sumEven = 0
+let sumOdd = 0
+for (let i = 0; i<= 100; i++){
+   if (i % 2 == 0){
+    sumEven += i
+   } else if (i % 2 == 1){
+    sumOdd += i
+   }
+}
+console.log(`The sum of all evens from 0 to 100 is ${sumEven}. And the sum of all odds from 0 to 100 is ${sumOdd}.`) 
+//12
+//Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+// Print sum of evens and sum of odds as array
+const newArray = [];
+let sEven = 0
+let sOdd = 0
+for (let i = 0; i<= 100; i++){
+   if (i % 2 == 0){
+    sEven += i
+   } else if (i % 2 == 1){
+    sOdd += i
+   }
+}
+console.log(sEven, sOdd)
+//13
+//Develop a small script which generate array of 5 random numbers
+const newArr = []
+for (let r = 0; r < 5; r++){
+    let randomNumber = Math.floor(Math.random() * 19)
+    newArr.push(randomNumber)
 }
 
-console.log(sum)  // 15
+console.log(newArr)
+
+//14
+//15
+//Develop a small script which generate a six characters random id:
+const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+let randomId = ''
+for (let i = 0; i < 6; i++){
+    let randomIds = Math.floor(Math.random() * characters.length)
+    randomId += characters[randomIds]
+}
+console.log(randomId)
+
+
