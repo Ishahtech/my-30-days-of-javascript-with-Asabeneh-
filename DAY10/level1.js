@@ -64,9 +64,39 @@ console.log(circumOfCircle(35))
 function density(mass,volume){
     density = mass / volume
     return density
-}10
-
+}
 console.log(density(17,23))
 //10
 //Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken.
 // Write a function which calculates a speed of a moving object, speed.
+function speed(distance,time){
+    speed = distance / time;
+    return speed
+}
+console.log(speed(24, 8))
+//11
+//Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
+function weight(mass, gravity){
+   return mass * gravity
+}
+console.log(weight(63, 9.8))
+//12
+//Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. 
+//Write a function which convert oC to oF convertCelsiusToFahrenheit.
+function convertCelsiusToFahrenheit(oC) {
+    return (oC * 9/5) + 32;
+}
+console.log(convertCelsiusToFahrenheit(6700000))
+
+/*
+    Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. 
+    Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.
+    Check if a person is underweight, normal, overweight or obese based the information given below.
+
+    The same groups apply to both men and women.
+    Underweight: BMI is less than 18.5
+    Normal weight: BMI is 18.5 to 24.9
+    Overweight: BMI is 25 to 29.9
+    Obese: BMI is 30 or more
+    */
+   
