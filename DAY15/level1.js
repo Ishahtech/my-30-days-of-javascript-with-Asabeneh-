@@ -101,3 +101,43 @@ console.log(sum)
 //sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 const concatCountries = countries.reduce((acc, country) => acc + ', ' + country)
 console.log(concatCountries)
+
+//19
+//Explain the difference between some and every
+//some checks if some of the elements are similar in one aspect and returns a boolean while 
+//every check if all the elements are similar in one aspect and return a boolean 
+
+//20
+// Use some to check if some names' length greater than seven in names array
+const namesLengthGreaterThanSeven = names.some((name) => name.length > 7);
+console.log(namesLengthGreaterThanSeven)
+
+//21
+// Use every to check if all the countries contain the word land
+const countryWithLand = countries.every((country) => country.includes('land'));
+console.log(countryWithLand)
+
+//22
+// Explain the difference between find and findIndex.
+//find returns the first element which satisfies the given condition while
+ //findIndex returns the position of the element which satisfies the given condition.
+
+ //23
+// Use find to find the first country containing only six letters in the countries array
+const ctryWSixLetters = countries.find((country) => country.length === 6)
+console.log(ctryWSixLetters)
+
+//24
+// Use findIndex to find the position of the first country containing only six letters in the countries array
+const countryWith6Index = countries.findIndex((country) => country.length === 6)
+console.log(countryWith6Index)
+
+//25
+// Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+const positionOfNorway = countries.findIndex((country) => "Norway" === country)
+console.log(positionOfNorway)
+
+//26
+// Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+const positionOfRussia = countries.findIndex((country) => "Russia" === country)
+console.log(positionOfRussia)
