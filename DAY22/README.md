@@ -6,8 +6,8 @@ const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 const rectangle = {
   width: 20,
   height: 10,
-  area: 200,
-  perimeter: 60
+  area: 
+  perimeter: 60200,
 }
 const users = [
 {
