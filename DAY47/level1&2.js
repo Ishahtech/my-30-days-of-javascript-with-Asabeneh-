@@ -1,8 +1,5 @@
 // Level 1
-// Store you first name, last name, age, country, city in your browser localStorage.
-
-localStorage.setItem('firstName', 'Aishah', 'lastName', 'Salawudeen', 'country', 'Nigeria', 'city', 'Osogbo');
-
+// Store you first name, last name, age, country, city in your browser localStorage.$
 // Level 2
 // Create a student object. The student object will have first name, 
 // last name, age, skills, country, enrolled keys and values for the keys. 
